@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Teatch the teatcher/tutorial/style.css">
+    <script src="https://kit.fontawesome.com/b0d7e4181f.js" crossorigin="anonymous"></script>
+    <title>Tutorial</title>
+</head>
+<body>
+    <header>
+        <h1>Tutorial</h1>
+        <h3>For MR Linus Eriksson</h3>
+    </header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="tutorial.html">Tutorial</a>
+        <a href="../contact/contact.html">Contact</a>
+    </nav>
+    <article id="in">
+        <button class="up" onclick="moveUp(this)"><i class="fa-solid fa-caret-up"></i></button>
+        <div class="text">
+            <h1>Hur man animerar i CSS</h1>
+            <p>För att skapa animationer i CSS behöver du förstå tre grundläggande koncept:</p>
+            <ol>
+            <li><strong>Keyframes:</strong> Används för att definiera de olika stegen i en animation.</li>
+            <li><strong>Animation-egenskapen:</strong> En kortform som kombinerar alla animationsegenskaper till en enda deklaration.</li>
+            <li><strong>Transition-egenskapen:</strong> Används för att skapa mjuka övergångar mellan olika stilar.</li>
+            </ol>
+            <p>Genom att bemästra dessa tre koncept kan du skapa en mängd olika animationer, från enkla övertoningar och glidningar till komplexa sekvenser och effekter.</p>
+            <p>Här är en kort översikt över varje koncept:</p>
+            <h2>Keyframes</h2>
+            <p>Keyframes används för att definiera de olika stegen i en animation. Du kan specificera stiländringar vid olika punkter i animationssekvensen med hjälp av procent eller nyckelord som <code>from</code> och <code>to</code>.</p>
+            <h2>Animation-egenskapen</h2>
+            <p>Animation-egenskapen är en kortform som låter dig kombinera alla animationsegenskaper till en enda deklaration. Du kan specificera keyframe-animationens namn, varaktighet, timing-funktion, fördröjning, antal upprepningar, riktning, fyllningsläge och spelstatus i en rad.</p>
+            <h2>Transition-egenskapen</h2>
+            <p>Tran20px;n-egenskapen används för att skapa mjuka övergångar mellan olika stilar. Du kan specificera egenskapen du vill övergå, varaktigheten av övergången, timing-funktionen och fördröjningen innan övergången startar.</p>
+            <p>Genom att kombinera dessa tre koncept kan du skapa dynamiska och engagerande animationer som förbättrar användarupplevelsen på din webbplats.</p>
+        </div>
+        <aside class="anime">
+            <div id="introI"></div>
+            <div id="introII"></div>
+            <div id="introIII"></div>
+            <div id="introIV"></div>
+        </aside>            
+        <button class="down" onclick="moveDown(this)"><i class="fa-solid fa-caret-down"></i></button>
+    </article>
+    <article>
+        <button onclick="moveUp(this)"><i class="fa-solid fa-caret-up"></i></button>
+        <div class="text">
+            <h1>Hur man använder keyframes</h1>
+            <p>Keyframes används för att definiera själva animationen. De specificerar stiländringar vid olika punkter i animationssekvensen.</p>
+            <p>För att skapa en keyframe-animation använder du regeln <code>@keyframes</code>. Inuti regeln <code>@keyframes</code> definierar du stilarna för olika punkter i animationen, vanligtvis med procent för att indikera tiden.</p>
+             <p>Till exempel:</p>
+             <pre><code>
+                @keyframes example {
+                    0% { background-color: red; }
+                    50% { background-color: yellow; }
+                    100% { background-color: green; }
+                }
+            </code></pre>
+            <p>I detta exempel kommer bakgrundsfärgen att börja som röd, ändras till gul vid halvvägs och sluta som grön. Exemple finns till höger<code>-></code></p>
+            <p>För att tillämpa animationen på ett element använder du egenskapen <code>animation</code>:</p>
+            <pre><code>
+                .animated-element {
+                    animation: exempel 4s infinite;
+                    width: 300px;
+                    max-height: 500px;
+                }
+            </code></pre>
+             <p>Detta kommer att tillämpa animationen <code>example</code> på elementet med en varaktighet på 5 sekunder, och den kommer att upprepas oändligt. Den har även dimentionerna <code>width: 300px</code> och <code>max-height: 500px</code>.</p>
+            <p>Du kan också specificera ytterligare egenskaper för animationen, såsom timing-funktion, fördröjning och antal upprepningar. Till exempel:</p>
+            <pre><code>
+                .animated-element {
+                animation: example 5s ease-in-out 1s 3;
+                }
+            </code></pre>
+            <p>I detta exempel kommer animationen att ha en ease-in-out timing-funktion, en fördröjning på 1 sekund innan den startar, och den kommer att upprepas 3 gånger. För att se exemple till höger "Refresha" sidan.</p>
+            <button onclick="moveDown(this)"><i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <aside class="anime flex">
+            <div id="key1"></div>
+            <br>
+            <div id="key2"></div>
+        </aside>
+    </article>
+    <article>
+        <button onclick="moveUp(this)"><i class="fa-solid fa-caret-up"></i></button>
+        <div class="text">
+            <h1>Hur man använder animation-egenskapen</h1>
+            <p>Egenskapen <code>animation</code> är en kortform som kombinerar alla animationsegenskaper till en enda deklaration. Den låter dig specificera keyframe-animationens namn, varaktighet, timing-funktion, fördröjning, antal upprepningar, riktning, fyllningsläge och spelstatus i en rad.</p>
+            <p>Till exempel:</p>
+            <pre><code>
+                .animated-element {
+                    animation: newAnimation 6s linear 2s infinite alternate-reverse both running;
+                }
+            </code></pre>
+            <p>Detta kommer att tillämpa animationen <code>newAnimation</code> på elementet med en varaktighet på 6 sekunder, en linjär timing-funktion, en fördröjning på 2 sekunder innan den startar, oändliga upprepningar, en alternerande omvänd riktning, både fyllningsläge och en spelstatus som körs.</p>
+            <p>Här är en uppdelning av egenskaperna som används i kortformen:</p>
+            <ul>
+                <li><code>newAnimation</code>: Namnet på keyframe-animationen.</li>
+                <li><code>6s</code>: Varaktigheten av animationen (6 sekunder).</li>
+                <li><code>linear</code>: Timing-funktionen för animationen.</li>
+                <li><code>2s</code>: Fördröjningen innan animationen startar (2 sekunder).</li>
+                <li><code>infinite</code>: Antalet gånger animationen kommer att upprepas (oändligt).</li>
+                <li><code>alternate-reverse</code>: Riktningen för animationen (alternerar mellan framåt och bakåt, omvänt).</li>
+                <li><code>both</code>: Fyllningsläget för animationen (tillämpas stilarna både i början och slutet av animationen).</li>
+                <li><code>running</code>: Spelstatusen för animationen (startar i körande läge).</li>
+            </ul>
+            <p>Du kan också använda de individuella animationsegenskaperna för att uppnå samma effekt. Till exempel:</p>
+            <pre><code>
+            .animated-element {
+                animation-name: newAnimation;
+                animation-duration: 6s;
+                animation-timing-function: linear;
+                animation-delay: 2s;
+                animation-iteration-count: infinite;
+                animation-direction: alternate-reverse;
+                animation-fill-mode: both;
+                animation-play-state: running;
+            }
+            </code></pre>
+            <p>Detta kommer att ge samma resultat som kortformen.</p>
+            <p>Du kan också kontrollera animationens spelstatus dynamiskt med JavaScript. Till exempel kan du starta, pausa eller starta om animationen baserat på användarinteraktioner:</p>
+            <pre><code>
+                // Kod för att starta animationen för #animated-element när sidan laddas och när elementet klickas
+                document.addEventListener('DOMContentLoaded', (event) => {
+                    const animated-element = document.querySelector('#animated-element');
+                
+                    // Lägg till en klickhändelse för att starta animationen
+                    animated-element.addEventListener('click', () => {
+                        animated-element.style.animationPlayState = 'running';
+                    });
+                });
+                </code></pre>
+            <p>I detta exempel kan animationen från något med <code>id="animated-element"</code> kontrolleras med JavaScript för att starta, pausa eller starta om baserat på användarinteraktioner eller andra händelser.</p>
+            <button onclick="moveDown(this)"><i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <aside class="anime flex">
+            <div id="animeI"></div>
+            <div id="animeII"></div>
+            <div id="animeIII"></div>
+        </aside>
+    </article>
+    <article>
+        <button onclick="moveUp(this)"><i class="fa-solid fa-caret-up"></i></button>
+        <div class="text">
+        <h1>Hur man använder transition-egenskapen</h1>
+        <p>Egenskapen <code>transition</code> används för att skapa mjuka övergångar mellan olika stilar. Den låter dig specificera egenskapen du vill övergå, varaktigheten av övergången, timing-funktionen och fördröjningen innan övergången startar.</p>
+        <p>Till exempel:</p>
+        <pre><code>
+        .transition-element {
+            transition: background-color 1s ease-in-out 0.5s;
+        }
+        </code></pre>
+        <p>Detta kommer att skapa en övergångseffekt på egenskapen <code>background-color</code> för elementet med en varaktighet på 1 sekund, en ease-in-out timing-funktion och en fördröjning på 0.5 sekunder innan den startar.</p>
+        <p>Du kan också specificera flera egenskaper att övergå, separerade med kommatecken. Till exempel:</p>
+        <pre><code>
+        .transition-element {
+            transition: background-color 1s ease-in-out 0.5s, color 1s ease-in-out 0.5s;
+        }
+        </code></pre>
+        <p>Detta kommer att skapa en övergångseffekt på både egenskaperna <code>background-color</code> och <code>color</code> för elementet.</p>
+        <p>Som standard kommer övergången att ske när egenskapen ändras. Du kan också utlösa övergången med JavaScript genom att ändra egenskapsvärdet dynamiskt:</p>
+        <pre><code>
+        // Kod för att starta #transitions-element när den klickas
+        document.addEventListener('DOMContentLoaded', (event) => {
+            const element = document.querySelector('#transition-element');
+        
+            element.addEventListener('click', () => {
+                // Ändra bakgrundsfärgen till blå
+                element.style.backgroundColor = 'blue';
+        
+                // Återställ bakgrundsfärgen till röd efter 5 sekunder
+                setTimeout(() => {
+                    element.style.backgroundColor = 'red';
+                }, 5000);
+            });
+        });
+        </code></pre>
+        <p>I detta exempel kommer övergångseffekten att ske när man klickar på elementet och då blir elementet blå och gå tillbaka till röd efter 5 sekunder.</p>
+        <p>Övergångar är ett utmärkt sätt att lägga till subtila animationer på din webbplats utan behov av keyframes eller komplexa animationer. De kan användas för att skapa hovringseffekter, knappanimationer och mer.</p>
+        <button onclick="moveDown(this)"><i class="fa-solid fa-caret-down"></i></button>
+        </div>
+        <aside class="anime flex">
+            <div id="transI"></div>
+            <br>
+            <div id="transII"></div>
+        </aside>
+    </article>
+    <article>
+        <button onclick="moveUp(this)"><i class="fa-solid fa-caret-up"></i></button>
+        <div class="text">
+            <h1>Sammanfattning och Nästa Steg</h1>
+            <p>Att animera element i CSS kan lägga till visuellt intresse och interaktivitet på din webbplats. Genom att använda keyframes, animation-egenskapen och transition-egenskapen kan du skapa en mängd olika animationer, från enkla övertoningar och glidningar till komplexa sekvenser och effekter.</p>
+            <p>Experimentera med olika egenskaper, värden och timing-funktioner för att skapa unika animationer som förbättrar användarupplevelsen och får din webbplats att sticka ut.</p>
+            <p>Kom ihåg att testa dina animationer på olika enheter och webbläsare för att säkerställa att de fungerar korrekt och ger en konsekvent upplevelse för alla användare.</p>
+            <p>Med övning och experimentering kan du bli skicklig på att animera element i CSS och skapa fantastiska animationer som fängslar din publik och ger liv åt din webbplats.</p>
+            <p>För att ta dina kunskaper till nästa nivå, överväg att utforska JavaScript-bibliotek som <a href="https://greensock.com/gsap/">GSAP</a> eller <a href="https://animejs.com/">Anime.js</a> för ännu mer avancerade animationer och interaktiva effekter.</p>
+            <h1>Slutligen, ha det bra Linus :D</h1>
+        </div>
+        <aside class="anime flex">
+            <div id="endI"></div>
+            <div id="endII"></div>
+            <div id="endIII"></div>
+            <div id="endIV"></div>
+        </aside>
+    </article>
+    <footer>
+        <div>
+            <p><strong>Jonathan Tiliander</strong></p>
+            <p>Norregatan 41, Trelleborg, 231 63</p>
+            <p>073 250 00 18</p>
+        </div>
+        <div>
+            <p><strong>STAMSITEs</strong></p>
+            <p>Sigmaboygatan 420, Göteborg, 420 69</p>
+            <p>040-6641660</p>
+        </div>
+        <div>
+            <p><strong>Linus Eriksson</strong></p>
+            <p>Nobelvägen 121A, Malmö, 214 33</p>
+            <p>040 664 16 65</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sigma Form</title>
+</head>
+<body>
+    <h1>Form tut</h1>
+    <form id="userForm">
+        <div class="form-field">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="Name" required>
+        </div>
+
+        <div class="form-field">
+            <label for="message">Message:</label>
+            <textarea name="message" id="message" required></textarea>
+        </div>
+
+        <div class="form-field">
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </div>
+
+        <div class="form-field">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </div>
+        
+        <div class="form-field">
+            <label>Likes Fridays:</label>
+            <input type="radio" name="Likesfridays" id="yes" value="Yes" required>
+            <label for="male">Yes</label>
+            <input type="radio" name="Likesfridays" id="female" no value="No">
+            <label for="female">No</label>
+        </div>
+
+        <div class="form-field">
+            <label>Hobbies:</label>
+            <input type="checkbox" name="hobbies" id="reading" value="reading">
+            <label for="reading">Reading</label>
+            <input type="checkbox" name="hobbies" id="sports" value="sports">
+            <label for="sports">Sports</label>
+            <input type="checkbox" name="travling" id="hobbies" value="travling">
+            <label for="travling">Travling:</label>
+        </div>
+
+        <div class="form-field">
+            <label for="country">Country:</label>
+            <select name="country" id="country" required>
+                <option value="">--Select Country--</option>
+                <option value="Nigeria">Nigeria</option>
+                <option value="Ghana">Ghana</option>
+                <option value="Kenya">Kenya</option>
+                <option value="Togo">Togo</option>
+                <option value="Other">Other</option>
+            </select>
+        </div> 
+        <button type= "submit">Submit</button>
+    </form>
+    <h2>Form data</h2>
+    <div id="output"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

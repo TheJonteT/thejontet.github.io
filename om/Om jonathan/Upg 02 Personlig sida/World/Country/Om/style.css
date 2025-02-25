@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+    font-family: 'tinos', 'roboto', sans-serif;
+}
+
+header{
+    background-color: #1E2A3C;
+    text-align: center;
+}
+
+header h1{
+    margin: 0;
+    font-size: xxx-large;
+    font-weight: 600;
+    padding: 30px 0px 10px;
+    color: lightgrey;
+    letter-spacing: 1px;
+}
+
+header h3{
+    margin: 0;
+    font-size: x-large;
+    font-weight: 500;
+    padding-bottom: 20px;
+    color: lightsalmon;
+}
+
+nav{
+    background-color: #182532;
+    padding: 10px 0px 10px 0px;
+}
+
+nav a{
+    background-color: #182532;
+    text-decoration: none;
+    color: lightsalmon;
+    font-size: larger;
+    font-weight: 600;
+    padding: 10px 15px 10px 15px;
+    letter-spacing: 0.5px;
+}
+
+nav a:hover{
+    background-color: #26354a;
+    color: salmon;
+}
+
+h1{
+    margin: 0;
+    padding-left: 40px;
+    padding-top: 20px;
+    font-size: xx-large;
+}
+
+article{
+    margin: 0;
+    background-color: bisque;
+}
+
+section#text{
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+
+}
+
+#te{
+    flex: 3;
+    font-size: larger;
+    font-weight: 500;
+}
+
+#jag{
+    width: 30%;
+}
+
+#La{
+    width: auto;
+}
+
+img.Jag{
+    flex: 2;
+    width: 10%;
+}
+
+h3{
+    text-align: center;
+    font-size: xx-large;
+    margin: 0;
+}
+
+aside#MU {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+}
+
+.MU {
+    flex: 1;
+    max-width: 300px;
+    text-align: center;
+}
+
+.MU img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+    padding-bottom: 10px;
+}
+
+.MU p {
+    font-size: medium;
+    line-height: 1.4;
+    padding: 0 10px;
+}

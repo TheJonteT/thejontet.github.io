@@ -1,0 +1,190 @@
+@charset "UTF-8";
+
+
+body{
+    background: #eee;
+    margin: 0;
+}
+
+header{
+    text-align: center;
+    background:#333;
+    padding-top: 20px;
+    padding-bottom: 30px;
+}
+
+header h1{
+    color: #fc3;
+    font-size: 40px;
+    font-weight: 25;
+    margin-bottom: 10px;
+    letter-spacing: 4px;
+}
+
+header h3{
+    color: white;
+    font-size: 30px;
+    font-weight: 50;
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+nav{
+    background-color: #555;
+    font-size: 18px;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+nav a{
+    background-color: #444;
+    padding: 7px 40px 7px 40px;
+    color: #fc3;
+    text-decoration: none;
+    border: #333 1px solid;
+}
+
+nav a:hover{
+    background-color:#555;
+}
+
+nav i{
+    color: lightgrey;
+    margin-right: 5px;
+    font-size: small;
+}
+
+div#wrapper{
+    display: flex;
+}
+
+main{
+    min-height: 300px;
+    background: #eee; 
+    flex: 2;
+    margin-left: 20px;
+}
+
+p.letter::first-letter{
+    font-size: 1.6em;
+    font-weight:500;
+}
+
+#styled-table{
+    border-collapse: collapse;
+    box-shadow: rgba(0, 0, 0, 0.4) 4px 4px 4px;
+}
+
+#styled-table td{
+    width: 150px;
+    font-size: small;
+    padding: 10px 0px 10px 10px;
+    border: #ddd solid 1px;
+}
+
+#styled-table tr:nth-child(even){
+    background-color:   #d3d3d3;
+}
+
+#styled-table tr:nth-child(odd){
+    background-color:  #fff;
+}
+
+#styled-table td:first-child{
+    width: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 7px;
+    font-size: small;
+    font-weight: bold;
+    background-color: #bebebe;
+    color: white;
+}
+
+div#row{
+    font-size: medium;
+    display: flex;
+    align-items: center;
+}
+
+div.cat{
+    display: inline-block;
+    margin-right: 5px;
+    border:#fc3 2px solid;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+
+aside{
+    background-color: whitesmoke;
+    flex: 1;
+    padding: 16px;
+    margin-right: 10px;
+}
+
+aside h2{
+    font-size: x-large;
+    font-weight: 600;
+}
+
+p.B{
+    font-weight:900;
+}
+
+div#venedig{
+    background: url(../../img/venedig.jpg);
+    padding: 170px 12px 12px 12px;
+}
+
+div#venedig section{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1px 8px 1px 8px
+}
+
+div#san{
+    background: url(../../img/sangimignano.jpg);
+    padding: 170px 12px 12px 12px;
+    margin-top: 20px;
+}
+
+div#san section{
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 1px 8px 1px 8px;
+}
+
+footer{
+    display: flex;
+    background: #333;
+}
+
+footer section{
+    flex: 1;
+    color: white;
+    padding: 5px 10px 5px 15px
+}
+
+footer section h4{
+    color: #fc3;
+    margin-top: 6px;
+    font-weight: 540;
+}
+
+nav#Back{
+    background: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+nav#Back a{
+    font-size: 50px;
+    padding: 17px;
+    text-decoration: none;
+    color: black;
+    border: 6px lime solid;
+    border-radius: 20px;
+    display: inline-block;
+    background: none;
+}

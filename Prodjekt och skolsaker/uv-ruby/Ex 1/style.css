@@ -1,0 +1,187 @@
+@charset "UTF-8";
+
+body{
+    margin: 0px;
+    background-color: #CFF4F9;
+    font-size: 20px;
+    width: 99.2vw;
+}
+
+h3{
+    font-size: 40px;
+}
+
+h4{
+    font-size: 30px;
+}
+
+p{
+    font-size: 20px;
+}
+
+/* img{
+    width: 90%;
+} */
+
+header{
+    padding-top: 40px;
+    padding-bottom: 20px;
+    text-align: center;
+    background-color: #004D61;
+    color: yellow;
+    font-size: xx-large;
+}
+
+main aside{
+    color: #C0C0C0;
+}
+
+main .s{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.four{
+    /* padding-left: 50px; */
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "h-a h-a h-a"
+    "i1-a i2-a i3-a"
+    "b1-a b2-a b3-a";
+}
+
+#g1-s1{
+    background-color: #004D61;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 44px;
+}
+
+#g1-s1 div{
+    color: #CFF4F9;
+    padding-top: 60px;
+
+}
+
+#g1-s2{
+    background-color: #004D61;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 44px;
+}
+
+#g1-s2 div{
+    color: #CFF4F9;
+    padding-top: 35px;
+}
+
+#g1-s3{
+    background-color: #004D61;
+    border-radius: 15px;
+    padding-top: 25px;
+    padding-left: 44px;
+}
+
+#g1-s3 div{
+    color: #CFF4F9;
+    padding-top: 5px;
+    padding-bottom: 10px;
+}
+
+.four h4{
+    grid-area: h-a;
+}
+
+#b1-a{
+    grid-area: b1-a;
+}
+
+#b2-a{
+    grid-area: b2-a;
+}
+
+#b3-a{
+    grid-area: b3-a;
+}
+
+#i1-a{
+    grid-area: i1-a;
+}
+
+#i2-a{
+    grid-area: i2-a;
+}
+
+#i3-a{
+    grid-area: i3-a;
+}
+
+#g{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "h4 h4 h4" 
+    "g2-s1 g2-s2 g2-s3"
+    "g2-s4 g2-s4 g2-s4"
+    ". g2-s5 .";
+}
+
+.fth h3{
+    grid-area: h4;
+}
+
+#b1-b{
+    grid-area: g2-s1;
+}
+
+#b2-b{
+    grid-area: g2-s2;
+}
+
+#b3-b{
+    grid-area: g2-s4;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "h4 h4 h4   .   ."
+    "sg-1 sg-2 sg-3 sg-4 sg-5";
+}
+
+#sg-h{
+    grid-area: h4;
+}
+
+#sg-1{
+    grid-area: sg-1;
+}
+
+#sg-2{
+    grid-area: sg-2;
+}
+
+#sg-3{
+    grid-area: sg-3;
+}
+
+#sg-4{
+    grid-area: sg-4;
+}
+
+#sg-5{
+    grid-area: sg-5;
+}
+
+#b4-b{
+    grid-area: g2-s3;
+}
+
+#b5-b{
+    grid-area: g2-s5;
+}

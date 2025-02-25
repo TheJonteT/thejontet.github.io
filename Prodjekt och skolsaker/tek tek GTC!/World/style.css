@@ -1,0 +1,114 @@
+@charset "UTF-8";
+
+body{
+    margin: 0;
+}
+
+h1{
+    margin: 0;
+}
+
+h3{
+    margin: 0;
+}
+
+p{
+    margin: 0;
+}
+
+nav{
+    background: url(../img/white-blue-dig.jpeg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    padding: 15px;
+}
+
+nav a{
+    text-decoration: none;
+    font-size: x-large;
+    color: black;
+    border: solid black 2px;
+    padding: 5px;
+    margin: 10px;
+}
+
+header{
+    background-color: #9FD7FF;
+    padding: 15px;
+    font-size: xx-large;
+}
+
+div{
+    display: flex;
+}
+
+div main{
+    flex: 2;
+    font-size: larger;
+    padding-left: 15px;
+    padding-right: 15pxpx;
+}
+
+div aside{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-left: 15px;
+    padding-right: 25px;
+}
+
+#m{
+    background: url(../img/download.jpg);
+    height: 300px;
+    width: 500px;
+    position: relative;
+}
+
+#m p {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: aliceblue;
+    padding: 5px;
+}
+
+
+footer{
+    display: flex;
+    background-color: #9FD7FF;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+footer h3{
+    align-self: center;
+    padding: 10px;
+    font-size: xx-large;
+}
+
+footer p{
+    align-self: center;
+    font-size: larger;
+    font-weight: 700;
+}
+
+nav#Back{
+    background: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+nav#Back a{
+    font-size: 50px;
+    padding: 17px;
+    text-decoration: none;
+    color: black;
+    border: 6px lime solid;
+    border-radius: 20px;
+    display: inline-block;
+}

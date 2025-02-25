@@ -1,0 +1,34 @@
+@charset "UTF-8";
+
+div#y{
+    background-color: rgb(74, 74, 235);
+    border: 4px solid #006;
+    height: 300px;
+    margin: 120px 20px;
+    position: relative;
+}
+
+div#i {
+    background-color: #fdc;
+    border: 4px solid #930;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+nav#Back{
+    background: none;
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+nav#Back a{
+    font-size: 50px;
+    padding: 17px;
+    text-decoration: none;
+    color: black;
+    border: 6px lime solid;
+    border-radius: 20px;
+    display: inline-block;
+}

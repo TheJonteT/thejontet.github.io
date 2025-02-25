@@ -1,0 +1,413 @@
+@charset "UTF-8";
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #F2FFF2; /* Very light mint */
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 50px;
+    padding-top: 10px;
+}
+
+header h2 {
+    margin: 0;
+    font-size: 30px;
+    padding-bottom: 10px;
+}
+
+nav {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+
+nav a:hover {
+    background-color: #555;
+}
+
+article {
+    position: relative;
+    display: flex;
+    width: 95vw;
+    height: calc(100vh - 100px);
+    padding: 20px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #ddd;
+    overflow-y: auto;
+}
+
+article #in{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    flex: 1;
+    padding: 20px;
+}
+
+.anime {
+    flex: 1;
+    display: flex;
+    justify-content: space-around; /* Ensure space between boxes */
+    align-items: center;
+}
+
+#introI, #introII, #introIII, #introIV {
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+#introI {
+    width: 50px;
+    height: 50px;
+    animation: introI 4s infinite alternate;
+}
+
+#introII {
+    width: 75px;
+    height: 75px;
+    animation: introII 4s infinite alternate;
+}
+
+#introIII {
+    width: 100px;
+    height: 100px;
+    animation: introIII 4s infinite alternate;
+}
+
+#introIV {
+    width: 125px;
+    height: 125px;
+    animation: introIV 4s infinite alternate;
+}
+
+@keyframes introI {
+    0% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+        background-color: red;
+        opacity: 1;
+    }
+    50% {
+        border: #333 5px solid;
+        transform: translateX(50px) translateY(50px) rotate(180deg) scale(1.5);
+        background-color: orange;
+        opacity: 0.5;
+    }
+    100% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(360deg) scale(1);
+        background-color: red;
+        opacity: 1;
+    }
+}
+
+@keyframes introII {
+    0% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+        background-color: blue;
+        opacity: 1;
+    }
+    50% {
+        border: #333 5px solid;
+        transform: translateX(50px) translateY(50px) rotate(180deg) scale(1.5);
+        background-color: green;
+        opacity: 0.5;
+    }
+    100% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(360deg) scale(1);
+        background-color: blue;
+        opacity: 1;
+    }
+}
+
+@keyframes introIII {
+    0% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+        background-color: green;
+        opacity: 1;
+    }
+    50% {
+        border: #333 5px solid;
+        transform: translateX(50px) translateY(50px) rotate(180deg) scale(1.5);
+        background-color: purple;
+        opacity: 0.5;
+    }
+    100% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(360deg) scale(1);
+        background-color: green;
+        opacity: 1;
+    }
+}
+
+@keyframes introIV {
+    0% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(0deg) scale(1);
+        background-color: yellow;
+        opacity: 1;
+    }
+    50% {
+        border: #333 5px solid;
+        transform: translateX(50px) translateY(50px) rotate(180deg) scale(1.5);
+        background-color: orange;
+        opacity: 0.5;
+    }
+    100% {
+        border: #333 1px solid;
+        transform: translateX(0px) translateY(0px) rotate(360deg) scale(1);
+        background-color: yellow;
+        opacity: 1;
+    }
+}
+
+@keyframes key{
+    0%{background-color: red}
+    50%{background-color: yellow}
+    100%{background-color: green}
+}
+
+.flex{
+    display: flex;
+    flex-direction: column;
+}
+
+#key1{
+    flex: 3;
+    width: 300px;
+    max-height: 500px;
+    animation: key 4s infinite;
+}
+
+#key2{
+    flex:1;
+    width: 150px;
+    animation: key 5s ease-in-out 1s 3;
+    margin-bottom: 50px;
+}
+
+@keyframes newAnimation {
+    0% {
+        transform: translateX(0) translateY(0) rotate(0deg) scale(1);
+        background-color: blue;
+        opacity: 1;
+    }
+    50% {
+        transform: translateX(50px) translateY(50px) rotate(180deg) scale(1.5);
+        background-color: green;
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateX(0) translateY(0) rotate(360deg) scale(1);
+        background-color: blue;
+        opacity: 1;
+    }
+}
+
+#animeI {
+    flex: 1;
+    width: 50px;
+    max-height: 50px;
+    animation: newAnimation 6s linear 2s infinite alternate-reverse both running;
+}
+
+#animeII {
+    flex: 1;
+    width: 50px;
+    max-height: 50px;
+    animation-name: newAnimation;
+    animation-duration: 6s;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    animation-fill-mode: both;
+    animation-play-state: running;
+}
+
+#animeIII {
+    flex: 1;
+    width: 50px;
+    max-height: 50px;
+    animation: newAnimation 6s linear 2s infinite alternate-reverse both paused;
+}
+
+#transI {
+    flex: 1;
+    width: 100px;
+    max-height: 100px;
+    background-color: red;
+    transition: background-color 1s ease-in-out 0.5s, transform 1s ease-in-out 0.5s;
+}
+
+#transI:hover {
+    background-color: blue;
+    transform: scale(1.5);
+}
+
+#transII {
+    flex: 1;
+    width: 100px;
+    max-height: 100px;
+    background-color: red;
+    transition: background-color 1s ease-in-out 0.5s, transform 1s ease-in-out 0.5s;
+}
+
+#endI {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    animation: bounce 2s infinite;
+}
+
+#endII {
+    width: 100px;
+    height: 100px;
+    background-color: green;
+    animation: spin 3s linear infinite;
+}
+
+#endIII {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: pulse 1.5s infinite;
+}
+
+#endIV {
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    animation: slide 4s infinite;
+}
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(100px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+article h1 {
+    font-size: 30px;
+}
+
+article h2 {
+    font-size: 20px;
+}
+
+article p {
+    font-size: 15px;
+}
+
+article button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+}
+
+article button:hover {
+    background-color: #555;
+}
+
+article button.up {
+    top: 20px;
+}
+
+article button.down {
+    bottom: 20px;
+    margin-bottom: 10px;
+}
+
+footer {
+    display: flex;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer div {
+    margin: 0;
+    padding: 0;
+    flex: 1;
+}

@@ -1,0 +1,1 @@
+Script från https://css-tricks.com/snippets/jquery/smooth-scrolling/
